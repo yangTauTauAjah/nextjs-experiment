@@ -9,6 +9,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+  console.log('/api/hello')
   console.log('test')
   await new Promise((res, rej) => {
     setTimeout(() => res('hello'), 8000)
