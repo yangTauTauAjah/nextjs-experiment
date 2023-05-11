@@ -11,7 +11,7 @@ export default async function handler(
 ) {
   console.log('test')
   await new Promise((res, rej) => {
-    setTimeout(() => res('hello'), 15000)
+    setTimeout(() => res('hello'), 8000)
   })
   res.status(200).json({ name: 'John Doe' })
 }
